@@ -44,6 +44,22 @@ $(document).ready(function(){
         }
     });
 });
+$(document).ready(function(){
+    $(".emotions__slider").owlCarousel({
+        dots: true,
+        items: 1,
+        loop: true,
+        responsiveClass:true,
+        responsive: {
+            0 : {
+                nav: false,
+            },
+            567 : {
+                nav: true,
+            }
+        }
+    });
+});
 $('.hash-nav__link').click(function(){
     $('.hash-nav__link').removeClass('hash-link__active');
     $(this).addClass('hash-link__active'); 
