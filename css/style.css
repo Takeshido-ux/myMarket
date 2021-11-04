@@ -40,13 +40,22 @@ input{
 .header-btn{
     cursor: pointer;
     position: relative;
+    height: 18px;
 }
 .header-btn > span{
     display: block;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1.5px);
     width: 24px;
     height: 3px;
     background-color: #fff;
-    margin-top: 5px;
+}
+.header-btn > span:first-child{
+    top: 0;
+}
+.header-btn > span:last-child{
+    top: calc(100% - 2px);
 }
 .header-btn__active > span:nth-child(2){
     display: none;
@@ -90,6 +99,15 @@ input{
     font-size: 24px;
     font-weight: 700;
     padding-left: 5px;
+}
+#nav-mob{
+    width: 320px;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    background-color: #FF4B65;
+    z-index: 100;
+    padding-bottom: 20px;
 }
 .navbar-style{
     background-color: #FFFFFF;
