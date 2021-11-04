@@ -773,6 +773,7 @@ input{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 90px;
 }
 .emotions__inner{
     position: relative;
@@ -954,8 +955,8 @@ input{
     background-clip: border-box;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 50px;
     padding-bottom: 150px;
+    padding-top: 90px;
 }
 .question__title{
     font-family: 'Alice';
