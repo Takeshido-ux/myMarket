@@ -92,6 +92,11 @@ $('.question__inner-item').click(function(){
         $(this).next().removeClass('question__inner-item_down__active');
         $(this).find('.inner__item-right').removeClass('inner__item-right__active');
     }
+    if(!$('.question__inner-item').hasClass('question__inner-item__active') && !$('.question__inner-item').next().hasClass('question__inner-item_down__active') && !$('.question__inner-item').find('.inner__item-right').hasClass('inner__item-right__active')){
+        $('.question__inner-item')[2].classList.add('question__inner-item__active');
+        $('.question__inner-item').next()[2].classList.add('question__inner-item_down__active');
+        $('.question__inner-item').find('.inner__item-right')[2].classList.add('inner__item-right__active');
+    }
     else{
         $('.question__inner-item').removeClass('question__inner-item__active');
         $('.question__inner-item_down').removeClass('question__inner-item_down__active');
